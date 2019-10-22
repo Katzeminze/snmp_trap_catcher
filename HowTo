@@ -1,0 +1,8 @@
+For SNMP trap you need to download snmpd, snmptrapd, snmptt etc.
+
+Add the following string to the snmptrapd.conf:
+traphandle default /home/kate/Documents/snmptrapCatcher.sh instead of default one.
+
+Add to your crontab path to the file send_trap.sh if you want to sent a trap more than one time. 
+
+snmpTrapCatcher.sh will catch the trap and then it to IOTServer. 
